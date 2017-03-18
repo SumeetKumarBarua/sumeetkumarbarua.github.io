@@ -10,7 +10,10 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css"> 
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+	
 	    <script src="scripts/jquery.js"></script>
 	    <script src="scripts/bootstrap.js"></script>
 	     <script src="scripts/bootstrap.min.js"></script>
@@ -22,8 +25,11 @@
 	    <script src="scripts/type.js"></script>
 	    <script src="scripts/typed.js"></script>
 	    <script src="scripts/angular.js"></script>
+	    <script src="scripts/Chart.bundle.js"></script>
+	    <script src="scripts/angular-chart.js"></script>
+	   
      
-        
+        <link rel="stylesheet" href="css/font-mfizz.css">
        	<link  rel="stylesheet" href="css/animate.css">
        	<link  rel="stylesheet" href="css/timeline.css">
        	<link  rel="stylesheet" href="css/magnific-popup.css">
@@ -31,9 +37,16 @@
         <link rel="stylesheet"  href="css/creative.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
-         
-        </head>
-<body id="Home">
+<script>
+angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
+	
+	});
+	   
+</script> 
+
+</head>
+        
+<body ng-app="app"; ng-controller="MarksCtrl"; id="Home">
 
  <nav id="mainNav" class="navbar  navbar-fixed-top affix"> 
 	<div class="container-fluid top-header">
@@ -48,8 +61,8 @@
 		
 		<div class="collapse navbar-collapse" id="navbarcollapse" >
 		<ul class="nav navbar-nav navbar-right list">
-			<li><a class="page-scroll" href="#Projects" style="color: white">Projects</a></li>
 			<li><a class="page-scroll" href="#About" style="color: white">About</a></li>
+			<li><a class="page-scroll" href="#Projects" style="color: white">Projects</a></li>
 			<li><a class="page-scroll" href="#Resume" style="color: white">Resume</a></li>
 			<li><a class="page-scroll" href="#Contact" style="color: white">Contact</a></li>		
 		</ul>
@@ -60,7 +73,10 @@
 </nav> 
 
 
-  <!--           <div class="container intro-body">
+    
+  
+  
+      <div class="container intro-body">
                 <br><br><br><br><br>  
                 <div class="row">
 			<div class="col-md-6">
@@ -91,23 +107,133 @@
                 </div>
                  </div>
                  <br><br><br><br><br>
-        	</div> -->
-        
-    <!--      <div class="col-md-7">
-				<br><br><br><br>
-                <div class="intro" style="color: blue;">
-                <p>I am an Engineer by passion,</p>
-                <p>Software Developer by profession,</p> 
-                 <br>
-                 </div>
-                </div>                 
-       -->
-             
-
-             
-             
+        	</div> 
+                               
      
-<!-- <section id="Projects" class="col-md-12  project-body" > 
+   
+
+
+ 
+
+
+
+
+
+
+
+<div id="About" class="timeline parallax-window" data-parallax="scroll" data-image-src="images/bg.png">
+	<section >
+		<ul class="wow fadeIn animated" style="animation-delay:0.1s;"> 
+
+			<li>
+				<div onclick="document.getElementById('10th').style.display='block'" class="roboto qual-desc wow fadeInRight animated" style="color: white; animation-delay:0.1s;">
+				<img class="img" alt="school" src="images/10.jpg">
+				<h4><i class="fa fa-calendar" aria-hidden="true"></i><span>&nbsp May 2004 - May 2008</span></h4>
+				<h2 style="font-weight: bold;">High School</h2>
+				<h3>Sri Aurobindo Integral Education & Research Centre </h3>
+				</div>
+			</li>
+			<li>
+				<div onclick="document.getElementById('12th').style.display='block'" class="roboto qual-desc wow fadeInLeft animated" style="color: white; animation-delay:0.1s;">
+				<img class="img" alt="school" src="images/12.png">
+				<h4><i class="fa fa-calendar" aria-hidden="true"></i><span>&nbsp June 2008 - May 2010</span></h4>
+				<h2 style="font-weight: bold;">Higher Secondary</h2>
+				<h3>Dalmia Vidya Mandir </h3>
+				</div>
+			</li>
+			<li>
+				<div onclick="document.getElementById('iiit').style.display='block'" class="roboto qual-desc wow fadeInRight animated" style="color: white; animation-delay:0.1s;">
+				<img class="img" alt="school" src="images/iiit.jpg">
+				<h4><i class="fa fa-calendar" aria-hidden="true"></i><span>&nbsp Sep 2011 - May 2015</span></h4>
+				<h2 style="font-weight: bold;">B.Tech (EEE)</h2>
+				<h3>International Institute of Information Technology, Bhubaneswar </h3>
+				</div>
+			</li>
+
+			<li>
+				<div onclick="document.getElementById('infy').style.display='block'" class="roboto qual-desc wow fadeInLeft animated" style="color: white; animation-delay:0.1s;">
+				<img class="img" alt="school" src="images/infosys.png">
+				<h4><i class="fa fa-calendar" aria-hidden="true"></i><span>&nbsp Present</span></h4>
+				<h2 style="font-weight: bold;">Java Developer</h2>
+				<h3>Infosys </h3>
+				</div>
+			</li>
+			<br>
+			<div class="more wow fadeIn animated" style="animation-delay:0.3s;">More to come...</div>
+	</ul>		
+</section>
+
+</div>
+
+
+<div id="10th" class="w3-modal">
+    <div class="w3-modal-content w3-card-8" style="height:100px; width:700px; " >
+        <span onclick="document.getElementById('10th').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+      <div class="w3-container" style="background-color: white">           
+	  <h3> Scored 87.5 % in AISSE </h3>
+	 <h3> Served as the House Captain for two years.</h3>
+ </div>
+  </div>
+</div>
+
+<div id="12th" class="w3-modal">
+    <div class="w3-modal-content w3-card-8" style="height:100px; width:700px; " >
+        <span onclick="document.getElementById('12th').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+      <div class="w3-container" style="background-color: white;">           
+	  <h3> Scored 84.8 % in AISSCE, with 85% in Computer Science and 95% in English. </h3>
+	 <h3>Physics and Chemistry were my soul. </h3> 
+	 <h3> Served as a member of Science Club for one year.</h3>
+ </div>
+  </div>
+</div>
+
+
+<div id="iiit" class="w3-modal">
+    <div class="w3-modal-content w3-card-8" style="height:100px; width:600px;" >
+        <span onclick="document.getElementById('iiit').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+      <div class="w3-container" style="background-color: white"> 
+       <h4> Served as a member of Robotics Club for two years.</h4>
+       <h4>Quarter finalist at anational level contest "TEXAS INSTRUMENTS ADC-2014 and worked on
+       the project "Currency Identification for visually impaired".
+      </h4>          
+	<h3 style="margin-left: 4em">Semester Grades on a scale of 10 </h3>
+	<canvas id="bar" class="chart chart-bar"
+	  chart-data="[8.68,8.93,8.04,8.71,8.00,7.04,9.09,9.29]" 
+	  chart-labels="['Sem 1','Sem 2','Sem 3','Sem 4','Sem 5','Sem 6','Sem 7','Sem 8']"
+	  chart-colors="['#727272','#f1595f','#79c36a','#599ad3','#f9a65a','#9e66ab','#cd7058','#d77fb3']"
+	  >
+	</canvas>
+	
+   </div>
+  </div>
+</div>
+
+
+
+<!-- <div>
+<i class="devicon-amazonwebservices-original" style="font-size: 5em"></i>
+</div>
+
+<i class="icon-maven" title="Apache Maven" style="font-size: large;">maven</i>
+<i class="icon-java" title="Java" style="font-size: large;"></i> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="Projects" class="col-md-12  project-body" > 
    <div class="container wow fadeIn animated" style="animation-delay:0.4s;">
    <div class="row">
    <ul class=" portfolio" style="list-style-type: none;" >
@@ -197,84 +323,18 @@
 			</div>
 			</div>
    
-</section> -->
-   
-   
-   	<section id="cd-timeline" class="cd-container">
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
-				<img src="img/cd-icon-picture.svg" alt="Picture">
-			</div> <!-- cd-timeline-img -->
+</section>
 
-			<div class="cd-timeline-content">
-				<h2>Title of section 1</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Jan 14</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
 
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-movie">
-				<img src="img/cd-icon-movie.svg" alt="Movie">
-			</div> <!-- cd-timeline-img -->
 
-			<div class="cd-timeline-content">
-				<h2>Title of section 2</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Jan 18</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
 
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
-				<img src="img/cd-icon-picture.svg" alt="Picture">
-			</div> <!-- cd-timeline-img -->
 
-			<div class="cd-timeline-content">
-				<h2>Title of section 3</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicinsimilique aut adipisci.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Jan 24</span>
-			</div> <!-- cd-timeline-content -->
-		</div> 	
-		</section>
-		
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-     
-     
-<!--       
+
+
+
+
+
+      
         
   <section id="Resume" class="col-md-7 resume-body Resume">
         <div class="container wow fadeInLeft animated" style="animation-delay:0.3s;">
@@ -344,7 +404,7 @@
                          &nbsp<span style="font-size: 2em;" class="fa fa-heart animated pulse"></span>&nbsp 
                       <span class="roboto">by Sumeet</span>
                 </div>
-    </section>  -->
+    </section>  
   
  <script>
 var wow = new WOW({boxClass: 'wow', animateClass: 'animated', live: true});

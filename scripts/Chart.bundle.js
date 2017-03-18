@@ -11876,7 +11876,7 @@ module.exports = function(Chart) {
 
 		// grid line settings
 		gridLines: {
-			display: true,
+			display: true,            
 			color: 'rgba(0, 0, 0, 0.1)',
 			lineWidth: 1,
 			drawBorder: true,
@@ -11901,7 +11901,7 @@ module.exports = function(Chart) {
 
 		// label settings
 		ticks: {
-			beginAtZero: false,
+			beginAtZero: true,   // made it true.. I wanted all values to start from zero (sumeet)
 			minRotation: 0,
 			maxRotation: 50,
 			mirror: false,
