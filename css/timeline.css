@@ -1,0 +1,151 @@
+.img{
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+}
+
+.qual-desc{
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 2px #161718;
+  border: 1px solid gray;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.qual-desc:hover {
+  background: transparent;
+}
+.qual-desc{
+  background-color: #666666;
+}
+
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 4px;
+  margin: 0 auto;
+  padding-top: 80px;
+  background:#e3e5e8;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 550px;
+  padding: 15px;
+}
+ 
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+
+.more {
+	font-family:roboto;
+	font-weight:bold;
+	font-size:medium;	
+	height: 120px;
+	width: 120px;
+	display: block;
+	margin-left:45.5%;
+	text-align: center;
+	background-color: #18892b;
+	color: white;
+	border-radius: 50%;
+	line-height: 120px;
+	
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+ 
+.timeline ul li:nth-child(odd) div::before {
+  left: -16.9px;
+  border-width: 10px 16px 10px 0;
+  border-color: transparent #808080 ;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -589px;
+}
+ 
+.timeline ul li:nth-child(even) div::before {
+  right: -16.5px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #808080;
+}
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px; /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+   
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+   
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+   
+  .timeline ul li:nth-child(even) div::before {
+    left: -16.5px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #808080 transparent transparent;
+  }
+  
+  .more {
+	font-family:roboto;
+	font-weight:bold;
+	font-size:medium;	
+	height: 120px;
+	width: 120px;
+	display: block;
+	margin-left:-8%;
+	text-align: center;
+	background-color: #18892b;
+	color: white;
+	border-radius: 50%;
+	line-height: 120px;
+	
+}
+}
