@@ -9,17 +9,18 @@
  	height: 100%;
  	width: 100%;
  }
- 
- @media only screen and (min-width :768px){
-    .intro-body{
- 	background-color:#017f64;
- 	height: 300%;
- 	width: 100%;
- }
+ .intro{
+	font-family:roboto, sans-serif !important;
+	color:white;
+	text-align:center;
+	font-weight:400;
+	font-size: 1.35em;
+	letter-spacing: 2px;
+	line-height: 1.5em;
+	margin-left: -5em;
 }
- 
  body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif !important;
 	height: 100%;
 } 
 .my-name{
@@ -45,23 +46,14 @@
     margin-left: auto;
     margin-right: auto;
 }
-.intro{
-	font-family:roboto;
-	color:white;
-	text-align:center;
-	font-weight:400;
-	font-size: 1.35em;
-	letter-spacing: 2px;
-	line-height: 1.5em;
-	margin-left: -5em;
-}
+
 @font-face {
     font-family: simplifica;    
     src: url("../css/simp.ttf");
 }
 
 .simp {
-     font-family: simplifica;
+     font-family: simplifica !important;
 }
 
 @font-face {
@@ -70,7 +62,7 @@
 }
 
 .roboto {
-     font-family: Roboto;
+     font-family: Roboto !important;
 }
 
 .contact {
@@ -111,7 +103,7 @@
 	letter-spacing: 3px;
 }
 ul .list{
-	font-family: Roboto;
+	font-family: Roboto !important;
 	font-weight: 100;
 	font-size: 3em;
 }
@@ -212,7 +204,7 @@ h5.project-description{
 	
 }
 .copyright{
-	font-family:Roboto sans-serif;
+	font-family:Roboto sans-serif !important;
 	color:blue;
 	font-size:1.25em;
 	text-align: center;
@@ -262,18 +254,60 @@ h5.project-description{
         width: 100%;
     }
 }
-.title-main {
+.headings {
 	font-size: 50px;
     font-weight: 100;
     color: #fff;
 }
 @media (max-width: 768px)
-.title-main {
+.headings {
     font-size: 50px;
     font-weight: 100;
 }
 @media (max-width: 992px)
-.title-main {
+.headings {
     font-size: 50px;
     font-weight: 100;
+}
+
+.skill-title {
+  font-family:Roboto;
+  font-size: 20px;
+  font-weight:500;
+  color: #fff;
+  text-align: left;
+}
+.skill-bar {
+  background: #fff;
+  padding: 2px;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+.skill {
+  height: 12px;
+  border-radius: 3px;
+}
+.skill-red {
+  background-color: #F53440;
+}
+.skill-blue {
+  background-color: rgb(9, 137, 231);
+}
+.skill-pink {
+  background-color: rgb(236, 8, 86);
+}
+.skill-aqua {
+  background-color: #00ADC8;
+}
+.skill-purple {
+  background-color: rgb(88, 1, 131);
+}
+.skill-green {
+  background-color: #00CD98;
+}
+.skill-orange {
+  background-color: #FF5722;
+}
+.skill-yellow {
+  background-color: #FFEB3B;
 }

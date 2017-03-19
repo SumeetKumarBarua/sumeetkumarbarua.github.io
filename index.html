@@ -123,8 +123,8 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
 
 <div id="About" class="timeline parallax-window" data-parallax="scroll" data-image-src="images/bg.png" style="top: -50px">
 	<section >
-	<h2 class="title-main">Academic and Experience</h2>
-	<br>
+	<h2 class="headings" style="margin-left: 50px">Academic and Experience</h2>
+
 		<ul class="wow fadeIn animated" style="animation-delay:0.1s;"> 
 
 			<li>
@@ -162,10 +162,121 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
 			</li>
 			<br>
 			<div class="more wow fadeIn animated" style="animation-delay:0.3s;">More to come...</div>
-	</ul>		
+	</ul>
+	<br><br>
+	<h2 class="headings" style="margin-left: 50px">Skills</h2><br>
+	<div class="container"  style="margin-left:10%">
+		<div class="row">
+				<div class="col-md-6">
+					<div class="row">
+						
+						<div class="col-sm-10">
+							<div class="row">
+								<div class="col-sm-12 skill-title">Java</div>
+								<div class="col-sm-12 skill-bar " title="90%">
+									<div class="skill skill-aqua wow fadeIn animated" style="width: 90%; animation-delay:0.3s;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						
+						<div class="col-sm-10">
+							<div class="row">
+								<div class="col-sm-12 skill-title">Tomcat, SQL, Oracle 11g</div>
+								<div class="col-sm-12 skill-bar" title="85%">
+									<div class="skill skill-yellow wow fadeIn animated" style="width: 85%; animation-delay:0.6s;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+         			<br>
+					<div class="row">
+						
+						<div class="col-sm-10">
+							<div class="row">
+								<div class="col-sm-12 skill-title">HTML, CSS, Bootstrap</div>
+								<div class="col-sm-12 skill-bar" title="80%">
+									<div class="skill skill-pink wow fadeIn animated" style="width: 80%; animation-delay:0.9s;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+                  <br>
+					<div class="row">
+						
+						<div class="col-sm-10">
+							<div class="row">
+								<div class="col-sm-12 skill-title">Angular Js, REST</div>
+								<div class="col-sm-12 skill-bar" title="80%">
+									<div class="skill skill-orange wow fadeIn animated" style="width: 80%; animation-delay:1.2s;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						
+						<div class="col-sm-10">
+							<div class="row">
+								<div class="col-sm-12 skill-title">Git, Maven, Jenkins</div>
+								<div class="col-sm-12 skill-bar" title="85%">
+									<div class="skill skill-purple wow fadeIn animated" style="width: 85%; animation-delay:1.5s;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+         <br>
+          </div>
+          <!-- <div class="col-md-2"></div> -->
+          		<div class="col-md-6">
+					<div class="row">
+						
+						<div class="col-sm-10">
+							<div class="row">
+								<div class="col-sm-12 skill-title">Communication</div>
+								<div class="col-sm-12 skill-bar " title="95%">
+									<div class="skill skill-green wow fadeIn animated" style="width: 95%; animation-delay:0.3s;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						
+						<div class="col-sm-10">
+							<div class="row">
+								<div class="col-sm-12 skill-title">Team Work</div>
+								<div class="col-sm-12 skill-bar" title="90%">
+									<div class="skill skill-green wow fadeIn animated" style="width: 90%; animation-delay:0.6s;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+         			<br>
+					<div class="row">
+						
+						<div class="col-sm-10">
+							<div class="row">
+								<div class="col-sm-12 skill-title">Leadership</div>
+								<div class="col-sm-12 skill-bar" title="90%">
+									<div class="skill skill-green wow fadeIn animated" style="width: 90%; animation-delay:0.9s;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+                  <br>
+				 </div>
+            </div>
+          </div>
+			
 </section>
-
 </div>
+
+
+
 
 
 <div id="10th" class="w3-modal">
@@ -213,31 +324,123 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
   </div>
 </div>
 
-
-
-<!-- <div>
-<i class="devicon-amazonwebservices-original" style="font-size: 5em"></i>
+<div id="infy" class="w3-modal">
+    <div class="w3-modal-content w3-card-8" style="height:100px; width:700px; " >
+        <span onclick="document.getElementById('infy').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+      <div class="w3-container" style="background-color: white;">           
+	  <h3>Started my journey with Core Java and now working on Frontend development.</h3>
+	 <h3>Always try to keep myself udpated with latest skills and knowledge. </h3> 
+	 <h3>GOAL : To be an end to end, full stack developer capable of working at any level.</h3>
+ </div>
+  </div>
 </div>
 
-<i class="icon-maven" title="Apache Maven" style="font-size: large;">maven</i>
-<i class="icon-java" title="Java" style="font-size: large;"></i> -->
 
 
 
 
 
 
+<!-- <section id="Projects" class="col-md-12  project-body" > 
+<h2 class="headings" style="margin-left: 50px">Projects</h2>
+	
+   <div class="container wow fadeIn animated" style="animation-delay:0.4s;">
+   <div class="row">
+   <ul class=" portfolio" style="list-style-type: none;" >
+   
+    <li class="col-md-4" ">
+					<div class="panel" >
+					<br>
+						<div class="" style="text-align: center;">
+							<h4 class="project-title"><em>FactsBox-Heroku Edition</em></h4>
+							<br>
+							<h5 class="project-description">This is a Full stack developed app deployed on Heroku.</h5>
+						</div>
+			
+				<br>	
+			<div style=" text-align: center;">
+			<a target="_blank" href="https://github.com/SumeetKumarBarua/FactsBox-Heroku-Edition">
+			<img alt="" src="images/factsHero.png" style="height:13em; width:22em;">
+			</a>
+			</div>
+			<br>
+		<div class="" style="text-align: center;">
+			<h4 class="project-skills"><em>Finesse : </em> Core Java, Heroku, SQL, AngularJS, HTML, CSS, RESTful Webservice, Git, Maven</h4>
+			</div>
+			<div class="git-link">
+		<a target="_blank" href="https://github.com/SumeetKumarBarua/FactsBox-Heroku-Edition">
+			<i class="fa fa-github" style="text-align: center; color: white;" aria-hidden="true"></i>
+		</a>
+		</div>
+		</div>
+        </li>
+        
+        <li class="col-md-4">
+					<div class="panel">
+					<br>
+						<div class="" style="text-align: center;">
+							<h4 class="project-title"><em>FactsBox</em></h4>
+							<br>
+							<h5 class="project-description">This app gives some interesting facts in various areas of Science in a random manner. </h5>
+						</div>
+			
+						
+			<div style=" text-align: center;">
+			<a target="_blank" href="https://github.com/SumeetKumarBarua/FactsBox">
+			<img alt="" src="images/facts.png" style="height:15em; width:22em;">
+			</a>
+			</div>
+		<div class="" style="text-align: center;">
+			<h4 class="project-skills"><em>Finesse : </em> Core Java, SQL, Hibernate, AngularJS, HTML, CSS, RESTful Webservice, Git, Maven</h4>
+			</div>
+		<div class="git-link">
+		<a target="_blank" href="https://github.com/SumeetKumarBarua/FactsBox">
+			<i class="fa fa-github" style="text-align: center; color: white;" aria-hidden="true"></i>
+		</a>
+		</div>
+		</div>
+        </li>
 
-
-
-
-
-
+       
+         <li class="col-md-4">
+					<div class="panel">
+					<br>
+						<div class="" style="text-align: center;">
+							<h4 class="project-title"><em>Personal Website</em></h4>
+							<br>
+							<h5 class="project-description">This site which you are currently looking at speaks about me, showcases my works. It is hosted with github pages.</h5>
+						</div>
+			
+						
+			<div style=" text-align: center;">
+			<a target="_blank" href="https://sumeetkumarbarua.github.io/">
+			<img alt="" src="images/p1.png" style="height:15em; width:22em;">
+			</a>
+			</div>
+		<div class="" style="text-align: center;">
+			<h4 class="project-skills"><em>Finesse : </em>HTML, CSS, jQuery, Bootstrap, Github Pages</h4>
+			</div>
+			<br>
+		<div class="git-link">
+		<a target="_blank" href="https://sumeetkumarbarua.github.io/">
+			<i class="fa fa-github" style="text-align: center; color: white;" aria-hidden="true"></i>
+		</a>
+		</div>
+		</div>
+        </li>
+				
+			</ul>
+			</div>
+			</div>
+   
+</section>
+ -->
 
 
 <section id="Projects" class="col-md-12  project-body" > 
-<h2 class="title-main">Projects</h2>
-	<br>
+<h2 class="headings" style="margin-left: 50px">Projects</h2>
+	
    <div class="container wow fadeIn animated" style="animation-delay:0.4s;">
    <div class="row">
    <ul class=" portfolio" style="list-style-type: none;" >
@@ -336,11 +539,9 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
 
 
 
-
-
       
         
-  <section id="Resume" class="col-md-7 resume-body Resume">
+  <section id="Resume" class="col-md-7 col-xs-7 resume-body Resume">
         <div class="container wow fadeInLeft animated" style="animation-delay:0.3s;">
             <div class="row">
             <br><br><br><br>
@@ -361,7 +562,7 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
 
 
 
-<section id="Contact" class="col-md-7 contact-body">
+<section id="Contact" class="col-md-7 col-xs-7 contact-body">
         <div class="container wow fadeInUp animated" style="animation-delay:0.2s;" >
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center"  >

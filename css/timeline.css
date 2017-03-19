@@ -28,7 +28,7 @@
 
 
 .parallax-window {
-    min-height: 400px;
+    min-height: 100px;
     background: transparent;
 }
 .timeline ul li {
@@ -54,7 +54,7 @@
 
 .timeline ul li div {
   position: relative;
-  bottom: 0;
+  bottom:-10px;
   width: 550px;
   padding: 15px;
 }
@@ -86,7 +86,7 @@
 }
 
 .timeline ul li:nth-child(odd) div {
-  left: 45px;
+  left: 30px;
 }
  
 .timeline ul li:nth-child(odd) div::before {
@@ -96,12 +96,12 @@
 }
 
 .timeline ul li:nth-child(even) div {
-  left: -589px;
+  left: -595px;
 }
  
 .timeline ul li:nth-child(even) div::before {
   right: -16.5px;
-  border-width: 8px 0 8px 16px;
+  border-width: 10px 0 10px 16px;
   border-color: transparent transparent transparent #808080;
 }
 
