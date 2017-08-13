@@ -3,6 +3,9 @@
 <head>
 <meta charset="ISO-8859-1" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sumeet</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -10,16 +13,25 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css"> 
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
-		
-		<script src="scripts/jquery.js"></script>
+	
+	    <script src="scripts/jquery.js"></script>
 	    <script src="scripts/bootstrap.js"></script>
+	     <script src="scripts/bootstrap.min.js"></script>
+	    <script src="scripts/awesome.min.js"></script>
+	    <script src="scripts/scrollreveal.min.js"></script>
+	    <script src="scripts/jquery.magnific-popup.min.js"></script>
+	    <script src="scripts/creative.min.js"></script>
+	    <script src="scripts/parallax.min.js"></script>
+	    <script src="scripts/type.js"></script>
+	    <script src="scripts/typed.js"></script>
 	    <script src="scripts/angular.js"></script>
-	    
-	    
+	    <script src="scripts/Chart.bundle.js"></script>
+	    <script src="scripts/angular-chart.js"></script>
 	   
      
         <link rel="stylesheet" href="css/font-mfizz.css">
        	<link  rel="stylesheet" href="css/animate.css">
+       	<link  rel="stylesheet" href="css/timeline.css">
        	<link  rel="stylesheet" href="css/magnific-popup.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet"  href="css/creative.css">
@@ -27,6 +39,7 @@
 
 <script>
 angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
+	
 	});
 	   
 </script> 
@@ -59,6 +72,10 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
 
 </nav> 
 
+
+    
+  
+  
  <div class="container intro-body">
              <br><br><br><br><br>  
                 <div class=" row">
@@ -92,6 +109,17 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
                  <br><br><br><br><br>
 </div> 
                                
+     
+   
+
+
+ 
+
+
+
+
+
+
 
 <div id="About" class="timeline parallax-window" data-parallax="scroll" data-image-src="images/bg.png" style="top: -50px">
 	<section >
@@ -127,11 +155,21 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
 			<li>
 				<div onclick="document.getElementById('infy').style.display='block'" class="roboto qual-desc wow fadeInLeft animated" style="color: white; animation-delay:0.1s;">
 				<img class="img" alt="school" src="images/infosys.png">
-				<h4><i class="fa fa-calendar" aria-hidden="true"></i><span>&nbsp Present</span></h4>
-				<h2 style="font-weight: bold;">Java Developer</h2>
+				<h4><i class="fa fa-calendar" aria-hidden="true"></i><span>&nbsp May 2015 - June 2017</span></h4>
+				<h2 style="font-weight: bold;">System Engineer</h2>
 				<h3>Infosys </h3>
 				</div>
 			</li>
+			
+			<li>
+				<div onclick="document.getElementById('dellEMC').style.display='block'" class="roboto qual-desc wow fadeInLeft animated" style="color: white; animation-delay:0.1s;">
+				<img class="img" alt="school" src="images/dellEMC.png">
+				<h4><i class="fa fa-calendar" aria-hidden="true"></i><span>&nbsp Present</span></h4>
+				<h2 style="font-weight: bold;">Software Engineer II</h2>
+				<h3>Dell EMC </h3>
+				</div>
+			</li>
+			
 			<br>
 			<div class="more wow fadeIn animated" style="animation-delay:0.3s;">More to come...</div>
 	</ul>
@@ -247,6 +285,10 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
 </section>
 </div>
 
+
+
+
+
 <div id="10th" class="w3-modal">
     <div class="w3-modal-content w3-card-8" style="height:100px; width:700px; " >
         <span onclick="document.getElementById('10th').style.display='none'" 
@@ -299,10 +341,24 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
       <div class="w3-container" style="background-color:#595959;">           
 	  <h3>Started my journey with Core Java and now working on Frontend development.</h3>
 	 <h3>Always try to keep myself udpated with latest skills and knowledge. </h3> 
-	 <h3><b>GOAL</b> : To be an end to end, full stack developer capable of working at any level.</h3>
+	 <h3>GOAL : To be an end to end, full stack developer capable of working at any level.</h3>
  </div>
   </div>
 </div>
+
+<div id="dellEMC" class="w3-modal">
+    <div class="w3-modal-content w3-card-8" style="height:100px; width:700px; " >
+        <span onclick="document.getElementById('dellEMC').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+      <div class="w3-container" style="background-color:#595959;">           
+	  <h3>Working with Converged Platforms and Solutions Division</h3>
+	 <h3>Learning about virtualization, storage and management devices </h3> 
+	 
+ </div>
+  </div>
+</div>
+
+
 
 
 <section id="Projects" class="col-md-12 col-md-6 col-xs-12 project-body"> 
@@ -310,33 +366,13 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
 	<br>
    <div class=" wow fadeIn animated" style="animation-delay:0.4s; margin-left: 80px;">
 
-			<div class="panel">
-				<img class="project-image" alt="Heroku Project"
-					src="images/contactapp.png"> <br>
-				<br>
-				<div class="text" style="text-align: center;">
-						<h4 class="project-skills"><b>Finesse</b> : Core Java, Heroku, PostgreSQL,
-							AngularJS, HTML, CSS, RESTful Webservice, Git, Maven</h4>
-				<a target="_blank" href="https://github.com/SumeetKumarBarua/PhoneBook-With-Messaging-Functionality"><div class="rect">
-				<i class="fa fa-github git-link" aria-hidden="true"></i>
-			    </div> 
-			    </a>
-				</div>
-				<div class="" style="text-align: center;">
-					<h4 class="project-title">Phonebook-Heroku</h4>
-					<h5 class="project-description">This is a Full stack developed app deployed on Heroku which provides messaging functionality.</h5>
-				</div>
-				<br>
-			</div>
-			
-			
-			
+
 			<div class="panel">
 				<img class="project-image" alt="Heroku Project"
 					src="images/factsHero.png"> <br>
 				<br>
 				<div class="text" style="text-align: center;">
-						<h4 class="project-skills"><b>Finesse</b> : Core Java, Heroku, SQL,
+						<h4 class="project-skills">Finesse : Core Java, Heroku, SQL,
 							AngularJS, HTML, CSS, RESTful Webservice, Git, Maven</h4>
 				<a target="_blank" href="https://github.com/SumeetKumarBarua/FactsBox-Heroku-Edition"><div class="rect">
 				<i class="fa fa-github git-link" aria-hidden="true"></i>
@@ -352,10 +388,10 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
 
 			<div class="panel">
 				<img class="project-image" alt="FactsBox"
-					src="images/fact1.png"> <br>
+					src="images/facts.png"> <br>
 				<br>
 				<div class="text" style="text-align: center;">
-						<h4 class="project-skills"><b>Finesse</b> : Core Java, SQL, Hibernate, AngularJS,
+						<h4 class="project-skills">Finesse : Core Java, SQL, Hibernate, AngularJS,
 						 HTML, CSS, RESTful Webservice, Git, Maven</h4>
 				<a target="_blank" href="https://github.com/SumeetKumarBarua/FactsBox"><div class="rect">
 				<i class="fa fa-github git-link" aria-hidden="true"></i>
@@ -374,7 +410,7 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
 					src="images/p1.png"> <br>
 				<br>
 				<div class="text" style="text-align: center;">
-						<h4 class="project-skills"><b>Finesse</b> : HTML, CSS, jQuery, Bootstrap, Github Pages</h4>
+						<h4 class="project-skills">Finesse : HTML, CSS, jQuery, Bootstrap, Github Pages</h4>
 				<a target="_blank" href="https://sumeetkumarbarua.github.io/"><div class="rect">
 				<i class="fa fa-github git-link" aria-hidden="true"></i>
 			    </div> 
@@ -392,21 +428,25 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
 					src="images/Api.png"> <br>
 				<br>
 				<div class="text" style="text-align: center;">
-						<h4 class="project-skills">Read about the types of API methods exposed.</h4>
-				<a target="_blank" href="https://github.com/SumeetKumarBarua/Working-with-API"><div class="rect">
+						<h4 class="project-skills">Coming soon....</h4>
+				<a target="_blank" href=""><div class="rect">
 				<i class="fa fa-github git-link" aria-hidden="true"></i>
 			    </div> 
 			    </a>
 				</div>
 				<div class="" style="text-align: center;">
 					<h4 class="project-title">Exposing API's</h4>
-					<h5 class="project-description">A brief description about how to expose API's and further using them.</h5>
+					<h5 class="project-description">A brief description about how to expose API's and further using them</h5>
 				</div>
 				<br>
 			</div>	
 </div>  
 </section>
+
+
+
       
+        
   <section id="Resume" class="col-md-7 col-xs-7 resume-body Resume">
         <div class="container wow fadeInLeft animated" style="animation-delay:0.3s;">
             <div class="row">
@@ -425,6 +465,9 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
  </div>
  </section>           
 
+
+
+
 <section id="Contact" class="col-md-7 col-xs-7 contact-body">
         <div class="container wow fadeInUp animated" style="animation-delay:0.2s;" >
             <div class="row">
@@ -440,6 +483,10 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
                     <a target="_blank" href="mailto:sumeet.barua007@gmail.com" style="color: white;"><i class="fa fa-envelope-o"></i></a>
                     <p style="color: white;">sumeet.barua007@gmail.com</p>
                 </div>
+                
+             
+                
+                
                 <br><br><br><br><br><br><br><br>
 				<div class="col-lg-8 col-lg-offset-2 text-center"  >
                    
@@ -459,7 +506,7 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
                 </div>
                 </div>
                 <br>
-                <br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
                
            </div>		 
         </div>
@@ -470,18 +517,6 @@ angular.module("app", ["chart.js"]).controller("MarksCtrl", function ($scope) {
                 </div>
     </section>  
   
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-	    <script src="scripts/awesome.min.js"></script>
-	    <script src="scripts/scrollreveal.min.js"></script>
-	    <script src="scripts/jquery.magnific-popup.min.js"></script>
-	    <script src="scripts/creative.min.js"></script>
-	    <script src="scripts/parallax.min.js"></script>
-	    <script src="scripts/type.js"></script>
-	    <script src="scripts/typed.js"></script>
-	    <script src="scripts/Chart.bundle.js"></script>
-	    <script src="scripts/angular-chart.js"></script>
-
  <script>
 var wow = new WOW({boxClass: 'wow', animateClass: 'animated', live: true});
 wow.init();
