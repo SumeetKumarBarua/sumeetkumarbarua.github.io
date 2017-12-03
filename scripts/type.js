@@ -1,8 +1,9 @@
 setTimeout(function(){
-		$(".e1").css("display", "inherit");
+	$(".e1").css("display", "inherit");
         $(".e1").typed({
-            strings: ["I am an Engineer by passion,"],
+            strings: [" I am an Engineer by passion,"],
             typeSpeed: 50, // typing speed
+	    startDelay:50,
             loop: false, // loop on or off (true or false)
             loopCount: true, // number of loops, false = infinite
             callback: function(){ } // call function after typing is done
@@ -12,9 +13,9 @@ setTimeout(function(){
 setTimeout(function(){
         $(".e2").css("display", "inherit");
         $(".e2").typed({
-            strings: ["Software Developer by profession,"],
+            strings: [" Software Developer by profession,"],
             typeSpeed: 50, 
-            startDelay:700,
+            startDelay:750,
             loop: false,
             loopCount: false, 
             callback: function(){ } 
@@ -24,9 +25,9 @@ setTimeout(function(){
 setTimeout(function(){
         $("e3").css("display", "inherit");
         $(".e3").typed({
-            strings: ["an enthusiast by heart,"],
+            strings: [" an enthusiast by heart,"],
             typeSpeed: 50, 
-            startDelay:1900,
+            startDelay:1960,
             loop: false, 
             loopCount: false, 
             callback: function(){ } 
@@ -36,9 +37,9 @@ setTimeout(function(){
 setTimeout(function(){
         $(".e4").css("display", "inherit");
         $(".e4").typed({
-            strings: ["always ready to take new Lessons."],
+            strings: [" always ready to take new Lessons."],
             typeSpeed: 50, 
-            startDelay:2000,
+            startDelay:2060,
             loop: false, 
             loopCount: false, 
         });
