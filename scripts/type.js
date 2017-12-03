@@ -1,6 +1,7 @@
+
 setTimeout(function(){
-	$(".e1").css("display", "inherit");
-        $(".e1").typed({
+	$(".i1").css("display", "inherit");
+        $(".i1").typed({
             strings: [" I am an Engineer by passion,"],
             typeSpeed: 50, // typing speed
 	    startDelay:50,
@@ -8,11 +9,11 @@ setTimeout(function(){
             loopCount: true, // number of loops, false = infinite
             callback: function(){ } // call function after typing is done
         });
-    }, 0);
+    }, 10);
 
 setTimeout(function(){
-        $(".e2").css("display", "inherit");
-        $(".e2").typed({
+        $(".i2").css("display", "inherit");
+        $(".i2").typed({
             strings: [" Software Developer by profession,"],
             typeSpeed: 50, 
             startDelay:750,
@@ -23,8 +24,8 @@ setTimeout(function(){
     }, 2000);
 
 setTimeout(function(){
-        $("e3").css("display", "inherit");
-        $(".e3").typed({
+        $("i3").css("display", "inherit");
+        $(".i3").typed({
             strings: [" an enthusiast by heart,"],
             typeSpeed: 50, 
             startDelay:1960,
@@ -35,8 +36,8 @@ setTimeout(function(){
     }, 4000);
 
 setTimeout(function(){
-        $(".e4").css("display", "inherit");
-        $(".e4").typed({
+        $(".i4").css("display", "inherit");
+        $(".i4").typed({
             strings: [" always ready to take new Lessons."],
             typeSpeed: 50, 
             startDelay:2060,
